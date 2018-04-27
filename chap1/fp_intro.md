@@ -1,11 +1,11 @@
 # Functional Programming for Scientists
 
-## What is Functional Programming?
+## 함수형 프로그래밍이 뭐죠?
 
 * 객체 중심으로 코딩하는 객체지향과 달리 함수형 프로그래밍은 함수가 중심.
 * 함수형 프로그래밍에서 함수는 일급시민(first-class citizens)으로 취급된다. 즉, 함수를 인수로 받을 수 있으며 함수를 반환할 수 있다.
 
-단순히 말로는 이해하기 힘들테니 예를 들어봅시다.
+간단히 예를 들어봅시다.
 
 ```haskell
 -- Haskell
