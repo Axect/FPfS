@@ -1,4 +1,5 @@
 {
+    "plugins": ["mathjax"],
     "pluginsConfig": {
         "fontsettings": {
             "theme": "white",
