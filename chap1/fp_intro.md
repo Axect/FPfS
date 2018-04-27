@@ -36,3 +36,7 @@ def hello(text):
 test = hello("Hello, ")
 print(test("World!")) # "Hello, World!"
 ```
+
+최근 나오는 대부분의 언어들은 위와 같이 함수형 언어의 기능을 일부 혹은 다수 지원합니다.
+
+
