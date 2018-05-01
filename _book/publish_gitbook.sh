@@ -9,4 +9,4 @@ git add .
 
 git commit -am "Update docs"
 
-git push github gh-pages
+git push github gitbook
