@@ -6,8 +6,8 @@ git pull github gh-pages --rebase
 
 cp -R _book/* .
 
-git clone -fx node_modules
-git clone -fx _book
+git clean -fx node_modules
+git clean -fx _book
 
 git add .
 
