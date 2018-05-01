@@ -7,7 +7,6 @@ cache:
 before_script:
   - npm install gitbook-cli -g
   - gitbook fetch latest
-  - gitbook install
 
 pages:
   stage: deploy
