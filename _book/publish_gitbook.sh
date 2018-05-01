@@ -1,9 +1,5 @@
 gitbook install && gitbook build
 
-git checkout gh-pages
-
-git pull github gh-pages --rebase
-
 cp -R _book/* .
 
 git clean -fx node_modules
@@ -14,5 +10,3 @@ git add .
 git commit -am "Update docs"
 
 git push github gh-pages
-
-git checkout master
