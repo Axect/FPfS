@@ -1,0 +1,330 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. Why FP? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="fp_02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="fp_intro.html">
+            
+                <a href="fp_intro.html">
+            
+                    
+                    FP for Scientists
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="fp_01.html">
+            
+                <a href="fp_01.html">
+            
+                    
+                    1. What is FP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="fp_02.html">
+            
+                <a href="fp_02.html">
+            
+                    
+                    2. Properties of FP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="fp_03.html">
+            
+                <a href="fp_03.html">
+            
+                    
+                    3. Why FP?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3. Why FP?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3-why-functional-programming">3. Why Functional Programming?</h1>
+<p>&#xC55E;&#xC5D0;&#xC11C; &#xC124;&#xBA85;&#xD588;&#xB2E4;&#xC2DC;&#xD53C; &#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC740; &#xC804;&#xD600; &#xC0C8;&#xB85C;&#xC6B4; &#xAC83;&#xC774; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;.
+&#xC5ED;&#xC0AC;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xD6C4;&#xC220;&#xD558;&#xACA0;&#xC9C0;&#xB9CC; &#xC774;&#xB860;&#xC801; &#xBC30;&#xACBD;&#xC778; Lambda Calculus&#xB294; 1930&#xB144;&#xB300;&#xC5D0; &#xB098;&#xC654;&#xACE0;
+&#xC9C0;&#xAE08; &#xAC00;&#xC7A5; &#xC720;&#xBA85;&#xD55C; &#xD568;&#xC218;&#xD615; &#xC5B8;&#xC5B4;&#xC778; Haskell&#xC870;&#xCC28; 1990&#xB144;&#xC5D0; &#xB4F1;&#xC7A5;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xD558;&#xC9C0;&#xB9CC; &#xC9C0;&#xAE08;, &#xADF8; &#xC5B4;&#xB290; &#xB54C;&#xBCF4;&#xB2E4;&#xB3C4; &#xC720;&#xB840;&#xC5C6;&#xC774; &#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC758; &#xC911;&#xC694;&#xC131;&#xC774; &#xBD80;&#xAC01;&#xB418;&#xACE0; &#xC788;&#xB294;&#xB370;
+&#xADF8; &#xC774;&#xC720;&#xC5D0; &#xB300;&#xD574; &#xC54C;&#xC544;&#xBCF4;&#xB3C4;&#xB85D; &#xD569;&#xC2DC;&#xB2E4;.</p>
+<h2 id="&#xBB34;&#xC5B4;&#xC758;-&#xBC95;&#xCE59;&#xC758;-&#xBD95;&#xAD34;">&#xBB34;&#xC5B4;&#xC758; &#xBC95;&#xCE59;&#xC758; &#xBD95;&#xAD34;</h2>
+<blockquote>
+<p>The complexity for minimum component costs has increased at a rate of roughly a factor of two per year ... 
+Certainly over the short term this rate can be expected to continue, if not to increase. 
+Over the longer term, the rate of increase is a bit more uncertain, 
+although there is no reason to believe it will not remain nearly constant for at least 10 years. 
+That means by 1975, the number of components per integrated circuit for minimum cost will be 65,000. 
+I believe that such a large circuit can be built on a single wafer.<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+</blockquote>
+<p>&#xBB34;&#xC5B4;&#xC758; &#xBC95;&#xCE59;&#xC774;&#xB780;, &#xBC18;&#xB3C4;&#xCCB4; &#xC9D1;&#xC801;&#xD68C;&#xB85C;&#xC758; &#xC131;&#xB2A5;, &#xC989; &#xCEF4;&#xD4E8;&#xD305; &#xC131;&#xB2A5;&#xC774; 24&#xAC1C;&#xC6D4;&#xB9C8;&#xB2E4; 2&#xBC30;&#xB85C; &#xC99D;&#xAC00;&#xD55C;&#xB2E4;&#xB294; &#xBC95;&#xCE59;&#xC785;&#xB2C8;&#xB2E4;.
+&#xC624;&#xB85C;&#xC9C0; &#xADC0;&#xB0A9;&#xC801; &#xCD94;&#xB860;&#xC5D0; &#xADFC;&#xAC70;&#xD558;&#xBBC0;&#xB85C; &#xC0AC;&#xC2E4; &#xBC95;&#xCE59;&#xC774;&#xB77C;&#xACE0; &#xAC70;&#xCC3D;&#xD558;&#xAC8C; &#xC774;&#xB984; &#xBD99;&#xC77C; &#xAC83;&#xC740; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;&#xB9CC;, &#xC774;&#xC0C1;&#xD558;&#xB9AC;&#xB9CC;&#xCE58;
+&#xC798; &#xB9DE;&#xC544;&#xC654;&#xB358; &#xBC95;&#xCE59;&#xC785;&#xB2C8;&#xB2E4;. <del>(&#xD56D;&#xAC04;&#xC5D0;&#xB294; &#xC774; &#xBC95;&#xCE59;&#xC744; &#xB9DE;&#xCD94;&#xB824; &#xACF5;&#xB300;&#xC0DD;&#xB4E4;&#xC744; &#xAC08;&#xC544;&#xB123;&#xB294;&#xB2E4;&#xB294; &#xC18C;&#xBB38;&#xC774;..)</del></p>
+<p>&#xD558;&#xC9C0;&#xB9CC; 2010&#xB144;&#xB300;&#xC5D0; &#xB4E4;&#xC5B4;&#xC640;&#xC11C; &#xBB34;&#xC5B4;&#xC758; &#xBC95;&#xCE59;&#xC740; 50&#xB144; &#xB3D9;&#xC548;&#xC758; &#xC804;&#xD1B5;&#xC744; &#xAE68;&#xACE0; &#xC885;&#xB9D0;&#xC744; &#xACE0;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xD2B9;&#xD788; &#xCD5C;&#xADFC;&#xC5D4; 10nm &#xACF5;&#xC815;&#xC5D0; &#xB4E4;&#xC5B4;&#xC11C;&#xBA74;&#xC11C; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xD30C;&#xC5F4;&#xC74C;&#xC774; &#xB098;&#xC624;&#xBA70; &#xB354;&#xB354;&#xC6B1; &#xC9D1;&#xC801;&#xB3C4; &#xD5A5;&#xC0C1;&#xC740; &#xAE30;&#xB300;&#xD558;&#xAE30; &#xC5B4;&#xB824;&#xC6CC;&#xC84C;&#xC8E0;.
+CPU &#xD68C;&#xC0AC;&#xB4E4;&#xC740; &#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; &#xBB34;&#xC5B4;&#xC758; &#xBC95;&#xCE59;&#xC744; &#xB530;&#xB974;&#xC9C0; &#xC54A;&#xACA0;&#xB2E4; &#xC120;&#xC5B8;&#xD558;&#xACE0; &#xC2F1;&#xAE00; &#xCF54;&#xC5B4;&#xC758; &#xC131;&#xB2A5;&#xD5A5;&#xC0C1;&#xBCF4;&#xB2E4;&#xB294; &#xCF54;&#xC5B4; &#xC218;&#xB97C; &#xB298;&#xB9AC;&#xB294; &#xAC83;&#xC5D0;
+&#xC9D1;&#xC911;&#xD558;&#xACE0; &#xC788;&#xACE0; &#xADF8;&#xB3D9;&#xC548; &#xADF8;&#xB798;&#xD53D;&#xC5D0;&#xB098; &#xC4F0;&#xC774;&#xB358; GPU&#xAC00; &#xACC4;&#xC0B0;&#xACC4;&#xC758; &#xC2E0;&#xC131;&#xC73C;&#xB85C; &#xB5A0;&#xC624;&#xB974;&#xB294; &#xB4F1; &#xD558;&#xB4DC;&#xC6E8;&#xC5B4; &#xC5C5;&#xACC4;&#xB294;
+&#xC5C4;&#xCCAD;&#xB09C; &#xBCC0;&#xD654;&#xC758; &#xBC14;&#xB78C;&#xC5D0; &#xD729;&#xC2F8;&#xC5EC; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xADF8;&#xB9AC;&#xACE0; &#xC774;&#xB7EC;&#xD55C; &#xD558;&#xB4DC;&#xC6E8;&#xC5B4; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC758; &#xBCC0;&#xD654;&#xB294; &#xB2F9;&#xC5F0;&#xD558;&#xAC8C;&#xB3C4; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC5D0; &#xC601;&#xD5A5;&#xC744; &#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBB34;&#xC5B4;&#xC758; &#xBC95;&#xCE59;&#xC740; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBA38;&#xC5D0;&#xAC8C; &#xAD49;&#xC7A5;&#xD788; &#xD6CC;&#xB96D;&#xD55C; &#xBC95;&#xCE59;&#xC774;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xD504;&#xB85C;&#xADF8;&#xB798;&#xBA38;&#xB294; &#xADF8;&#xC800; &#xC2F1;&#xAE00; &#xCF54;&#xC5B4;&#xB85C; &#xC798; &#xB3CC;&#xC544;&#xAC00;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xC9DC;&#xB193;&#xC73C;&#xBA74; 24&#xAC1C;&#xC6D4;&#xB9C8;&#xB2E4; &#xD558;&#xB4DC;&#xC6E8;&#xC5B4;&#xAC00; &#xC5C5;&#xADF8;&#xB808;&#xC774;&#xB4DC; &#xB418;&#xBA70;
+&#xCF54;&#xB4DC; &#xC5ED;&#xC2DC; &#xC131;&#xB2A5;&#xC774; 2&#xBC30; &#xD5A5;&#xC0C1;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xC57C;&#xB9D0;&#xB85C; &#xACF5;&#xC9DC; &#xC810;&#xC2EC;&#xC774;&#xC5C8;&#xC8E0;.
+&#xD558;&#xC9C0;&#xB9CC;, &#xC815;&#xBCF4; &#xBC0F; &#xB370;&#xC774;&#xD130;&#xC758; &#xC591;&#xC740; &#xC555;&#xB3C4;&#xC801;&#xC73C;&#xB85C; &#xB298;&#xC5B4;&#xAC00;&#xB294;&#xB370; &#xCF54;&#xC5B4;&#xC758; &#xCFE8;&#xB7ED; &#xD5A5;&#xC0C1;&#xC740; &#xD06C;&#xAC8C; &#xAE30;&#xB300;&#xD560; &#xC218; &#xC5C6;&#xB294; &#xC0C1;&#xD669;&#xC774; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC774;&#xB7EC;&#xD55C; &#xC2DC;&#xB300;&#xC5D0; &#xC544;&#xC9C1;&#xB3C4; &#xC2F1;&#xAE00;&#xCF54;&#xC5B4;&#xB97C; &#xACE0;&#xC9D1;&#xD558;&#xBA74; &#xC790;&#xC5F0;&#xC2A4;&#xB7FD;&#xAC8C; &#xB3C4;&#xD0DC;&#xB420; &#xC218; &#xBC16;&#xC5D0; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC774;&#xC81C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBA38;&#xB4E4;&#xC740; &#xD544;&#xC5F0;&#xC801;&#xC73C;&#xB85C; &#xBCD1;&#xB82C; &#xD639;&#xC740; &#xBCD1;&#xD589; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC758; &#xC138;&#xACC4;&#xC5D0; &#xB6F0;&#xC5B4;&#xB4E4; &#xC218; &#xBC16;&#xC5D0; &#xC5C6;&#xC5B4;&#xC84C;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xADF8;&#xB807;&#xAC8C; &#xB2E4;&#xC2DC; &#xD76C;&#xB9DD;&#xC774; &#xBCF4;&#xC774;&#xB294; &#xB4EF; &#xD588;&#xC9C0;&#xB9CC; &#xBB38;&#xC81C;&#xAC00; &#xD558;&#xB098; &#xC0DD;&#xACBC;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="deadlock">Deadlock</h3>
+<p><img src="image/deadlock.jpg" alt="deadlock"></p>
+<p>&#xB370;&#xB4DC;&#xB77D;&#xC740; &#xBCD1;&#xB82C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC744; &#xD574;&#xBCF8; &#xC0AC;&#xB78C;&#xC774;&#xB77C;&#xBA74; &#xAF2D; &#xD55C; &#xBC88;&#xCBE4;&#xC740; &#xACAA;&#xC5C8;&#xC744; &#xBB38;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<blockquote id="fn_1">
+<sup>1</sup>. Moore, Gordon E. (1965-04-19). &quot;Cramming more components onto integrated circuits&quot;. Electronics. Retrieved 2016-07-01.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fp_02.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2. Properties of FP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. Why FP?","level":"1.2.3","depth":2,"previous":{"title":"2. Properties of FP","level":"1.2.2","depth":2,"path":"FP/fp_02.md","ref":"FP/fp_02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","livereload"],"pluginsConfig":{"fontsettings":{"theme":"white","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FP/fp_03.md","mtime":"2018-05-01T12:55:28.434Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-01T13:31:30.845Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

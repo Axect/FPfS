@@ -1,0 +1,332 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>FP for Scientists · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fp_01.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="fp_intro.html">
+            
+                <a href="fp_intro.html">
+            
+                    
+                    FP for Scientists
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="fp_01.html">
+            
+                <a href="fp_01.html">
+            
+                    
+                    1. What is FP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="fp_02.html">
+            
+                <a href="fp_02.html">
+            
+                    
+                    2. Properties of FP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="fp_03.html">
+            
+                <a href="fp_03.html">
+            
+                    
+                    3. Why FP?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >FP for Scientists</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-programming-for-scientists">Functional Programming For Scientists</h1>
+<p><strong>2018.04.27 Tae Geun Kim</strong></p>
+<p>&#xAE00;&#xC744; &#xC4F0;&#xACE0; &#xC788;&#xB294; &#xC9C0;&#xAE08;(2018&#xB144;) &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC5D0; &#xC9C0;&#xAC01;&#xBCC0;&#xB3D9;&#xC774; &#xC77C;&#xC5B4;&#xB098;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC804;&#xCCB4;&#xC801;&#xC778; &#xC21C;&#xC704;&#xB294; &#xBCC4; &#xCC28;&#xC774;&#xAC00; &#xC5C6;&#xC9C0;&#xB9CC; &#xB0B4;&#xBD80;&#xB97C; &#xB4E4;&#xC5EC;&#xB2E4; &#xBCF4;&#xBA74; &#xC0C1;&#xB2F9;&#xD788; &#xB9CE;&#xC740; &#xBD80;&#xBD84; &#xBCC0;&#xD654;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xCCA0;&#xC639;&#xC131; &#xAC19;&#xC774; 1&#xC704;&#xB97C; &#xC9C0;&#xD0A4;&#xB358; Java&#xAC00; &#xBB34;&#xB108;&#xC838;&#xAC00;&#xACE0; Kotlin&#xACFC; Scala&#xAC00; &#xADF8; &#xC790;&#xB9AC;&#xB97C; &#xCC9C;&#xCC9C;&#xD788; &#xC7A0;&#xC2DD;&#xD574;&#xAC00;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+iOS&#xC5D0;&#xB294; &#xC624;&#xB7AB;&#xB3D9;&#xC548; &#xC368;&#xC654;&#xB358; Objective-C&#xAC00; &#xD1F4;&#xC7A5;&#xD558;&#xACE0; Swift&#xAC00; &#xC8FC;&#xC5ED;&#xC73C;&#xB85C; &#xB5A0;&#xC62C;&#xB790;&#xC2B5;&#xB2C8;&#xB2E4;.
+Javascript&#xB294; &#xC5EC;&#xC804;&#xD788; &#xAD73;&#xAC74;&#xD558;&#xC9C0;&#xB9CC; &#xD568;&#xC218;&#xD615; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB77C;&#xB294; &#xB9D0;&#xC774; &#xB298;&#xC5B4;&#xB098;&#xACE0; &#xB3D9;&#xC2DC;&#xC5D0;
+&#xD568;&#xC218;&#xD615; &#xBC18;&#xC751;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;(FRP)&#xC774;&#xB77C;&#xB294; &#xC6A9;&#xC5B4;&#xAC00; &#xB4F1;&#xC7A5;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC11C;&#xC810;&#xC5D0;&#xB294; &quot;Functional Programming in C++&quot; &#xB4F1;&#xACFC; &#xAC19;&#xC740;
+&#xAE30;&#xC874;&#xC758; &#xC5B8;&#xC5B4;&#xB4E4;&#xB85C; &#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC744; &#xAD6C;&#xD604;&#xD558;&#xB294; &#xCC45;&#xB4E4;&#xC774; &#xB298;&#xC5B4;&#xB0AC;&#xAD6C;&#xC694;.
+&#xB610;&#xD55C; &#xACFC;&#xD559;&#xACC4;&#xC5D0;&#xC11C;&#xB294; &#xC544;&#xC9C1; &#xC720;&#xBA85;&#xD558;&#xC9C4; &#xC54A;&#xC9C0;&#xB9CC; Julia&#xB77C;&#xB294; &#xBA4B;&#xC9C4; &#xC5B8;&#xC5B4;&#xAC00; &#xB4F1;&#xC7A5;&#xD558;&#xC5EC; &#xC810;&#xC720;&#xC728;&#xC744; &#xB192;&#xC5EC;&#xAC00;&#xACE0; &#xC788;&#xC8E0;.</p>
+<p>&#xC704;&#xC5D0;&#xC11C; &#xC5B8;&#xAE09;&#xD55C; &#xBAA8;&#xB4E0; &#xBCC0;&#xD654;&#xC5D0;&#xB294; &#xACF5;&#xD1B5;&#xC810;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC14;&#xB85C; &#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xACFC; &#xC5F0;&#xAD00;&#xC774; &#xC788;&#xB2E4;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.
+Swift, Kotlin, Scala, Julia&#xB294; &#xBAA8;&#xB450; &#xC900; &#xD568;&#xC218;&#xD615; &#xC5B8;&#xC5B4;&#xC774;&#xBA70; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC73C;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC84C;&#xB358; C++, Java, Javascript, C#, Python &#xB4F1;&#xC758;
+&#xC804;&#xD1B5;&#xC801;&#xC778; &#xAC15;&#xC790;&#xB4E4;&#xB3C4; &#xCD5C;&#xC2E0; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xB9C8;&#xB2E4; &#xD568;&#xC218;&#xD615; &#xB3C4;&#xAD6C;&#xB4E4;&#xC744; &#xB2EC;&#xACE0; &#xB098;&#xC635;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBD84;&#xBA85; &#xD568;&#xC218;&#xD615; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC740; &#xC0C8;&#xB85C;&#xC6B4; &#xAC83;&#xC774; &#xC544;&#xB2CC;&#xB370; &#xC65C; &#xCD5C;&#xC2E0; &#xD2B8;&#xB80C;&#xB4DC;&#xC778; &#xAC83;&#xCC98;&#xB7FC; &#xB728;&#xAC81;&#xAC8C; &#xB2E4;&#xB904;&#xC9C8;&#xAE4C;&#xC694;?
+&#xB610;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5C5;&#xACC4;&#xC640; &#xBC00;&#xC811;&#xD55C; &#xACFC;&#xD559;&#xC790;&#xB4E4;&#xC740; &#xC774;&#xB7F0; &#xC2DC;&#xB300;&#xC5D0; &#xC5B4;&#xB5A4; &#xC2A4;&#xD0E0;&#xC2A4;&#xB97C; &#xCDE8;&#xD574;&#xC57C; &#xB420;&#xAE4C;&#xC694;?</p>
+<p>&#xC694;&#xC998; &#xACFC;&#xD559;&#xACC4;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5C6;&#xC774;&#xB294; &#xC5F0;&#xAD6C; &#xC790;&#xCCB4;&#xAC00; &#xBD88;&#xAC00;&#xB2A5;&#xD55C; &#xACBD;&#xC6B0;&#xAC00; &#xB9CE;&#xC744; &#xC815;&#xB3C4;&#xB85C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC5D0; &#xB9CE;&#xC740; &#xBD80;&#xBD84;&#xC744; &#xC758;&#xC874;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. 
+&#xD558;&#xC9C0;&#xB9CC; &quot;Scientists are some of the worst programmers on the face of the planet&quot;
+&#xC18C;&#xB9AC;&#xB97C; &#xB4E4;&#xC744; &#xC815;&#xB3C4;&#xB85C;<sup><a href="#fn_1" id="reffn_1">1</a></sup> &#xC18C;&#xC704; &#xB9D0;&#xD558;&#xB294; &#xC4F0;&#xB808;&#xAE30; &#xCF54;&#xB4DC;&#xB97C; &#xC591;&#xC0B0;&#xD558;&#xB294; &#xACFC;&#xD559;&#xC790;&#xB4E4;&#xC774; &#xB9CE;&#xC2B5;&#xB2C8;&#xB2E4;. 
+&#xBB3C;&#xB860; &#xC5F0;&#xAD6C;&#xD558;&#xAE30;&#xB3C4; &#xBC14;&#xC058;&#xB2C8; &#xB3C4;&#xAD6C;&#xB530;&#xC704;&#xC5D0; &#xC2DC;&#xAC04;&#xC744; &#xC4F0;&#xAE30; &#xC544;&#xAE4C;&#xC6B8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xD558;&#xC9C0;&#xB9CC; &#xC801;&#xC5B4;&#xB3C4; &#xC774; &#xB3C4;&#xAD6C;&#xAC00; &#xC5B4;&#xB514;&#xC5D0; &#xC4F0;&#xC774;&#xB294; &#xAC83;&#xC778;&#xC9C0;, &#xC800; &#xB3C4;&#xAD6C;&#xC640; &#xC774; &#xB3C4;&#xAD6C; &#xC911;&#xC5D0; &#xBB34;&#xC5C7;&#xC774; &#xB354; &#xC801;&#xC808;&#xD55C;&#xC9C0; &#xC815;&#xB3C4;&#xB294; &#xD310;&#xBCC4;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC57C;
+&#xB3C4;&#xAD6C;&#xB97C; &#xC0AC;&#xC6A9;&#xD588;&#xB2E4;&#xB77C;&#xACE0; &#xB9D0;&#xC744; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC6B0;&#xB9AC;&#xAC00; &#xC694;&#xB9AC;&#xB97C; &#xD558;&#xB294;&#xB370; &#xBD88;&#xB3C4;&#xC800;&#xB97C; &#xC4F0;&#xB294; &#xAC83;&#xC740; &#xC5C4;&#xCCAD;&#xB098;&#xAC8C; &#xBE44;&#xD6A8;&#xC728;&#xC801;&#xC778; &#xC77C;&#xC774;&#xB2C8;&#xAE4C;&#xC694;.</p>
+<p>&#xADF8;&#xB7FC; &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xC758; &#xD2B8;&#xB80C;&#xB4DC;&#xB97C; &#xADF8;&#xB300;&#xB85C; &#xB530;&#xB77C;&#xAC00;&#xBA74; &#xB418;&#xB294; &#xAC83;&#xC778;&#xAC00;&#xC694;?</p>
+<p>&#xADF8;&#xAC83;&#xB3C4; &#xC633;&#xC740; &#xAC83;&#xB9CC;&#xC740; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;. &#xD2B8;&#xB80C;&#xB4DC;&#xB294; &#xBD84;&#xBA85; &#xC774;&#xC720;&#xAC00; &#xC788;&#xC744; &#xAC83;&#xC774;&#xC9C0;&#xB9CC;, &#xADF8;&#xAC83;&#xC774; &#xACFC;&#xD559;&#xC5D0;&#xC11C; &#xC798; &#xC801;&#xC6A9;&#xC774; &#xB418;&#xB290;&#xB0D0;&#xB294; &#xB610; &#xB2E4;&#xB978; &#xC77C;&#xC774;&#xB2C8;&#xAE4C;&#xC694;.
+&#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xACFC; &#xACFC;&#xD559;&#xC790;&#xB4E4;&#xC740; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC744; &#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC5D0;&#xC11C; &#xACF5;&#xD1B5;&#xC810;&#xC774; &#xC788;&#xC9C0;&#xB9CC; &#xADFC;&#xBCF8;&#xBD80;&#xD130;&#xAC00; &#xB2E4;&#xB985;&#xB2C8;&#xB2E4;.
+&#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC744; &#xBAA8;&#xB974;&#xB294; &#xAC1C;&#xBC1C;&#xC790;&#xB294; &#xC5C6;&#xC9C0;&#xB9CC; &#xC544;&#xB294; &#xACFC;&#xD559;&#xC790;&#xB294; &#xB4DC;&#xBB3C;&#xACE0; &#xB300;&#xD559;&#xAD50; &#xB808;&#xBCA8;&#xC758; &#xC218;&#xD559;&#xC744; &#xBAA8;&#xB974;&#xB294; &#xACFC;&#xD559;&#xC790;&#xB294; &#xC5C6;&#xC9C0;&#xB9CC; &#xAC1C;&#xBC1C;&#xC790;&#xB294; &#xBAA8;&#xB97C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xB530;&#xB77C;&#xC11C; &#xAC1C;&#xBC1C;&#xC790;&#xC5D0;&#xAC90; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC774; &#xD568;&#xC218;&#xD615; &#xBCF4;&#xB2E4; &#xC0C1;&#xB2F9;&#xD788; &#xC26C;&#xC6B4; &#xD3B8;&#xC785;&#xB2C8;&#xB2E4;&#xB9CC;, &#xACFC;&#xD559;&#xC790;&#xB4E4;&#xC5D0;&#xAC90; &#xC624;&#xD788;&#xB824; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC774; &#xB0AF;&#xC124;&#xACE0; &#xC5B4;&#xB824;&#xC6B4; &#xAC1C;&#xB150;&#xC77C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC21C;&#xC804;&#xD788; &#xD544;&#xC790;&#xC758; &#xACBD;&#xD5D8;&#xC774;&#xC9C0;&#xB9CC; &#xD544;&#xC790;&#xC5D0;&#xAC8C;&#xB294; &#xD568;&#xC218;&#xD615; &#xC5B8;&#xC5B4;&#xC778; Haskell&#xC774; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5; &#xC5B8;&#xC5B4;&#xC778; Java&#xBCF4;&#xB2E4; &#xD6E8;&#xC52C; &#xC26C;&#xC6E0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD568;&#xC218;&#xD615; &#xC5B8;&#xC5B4;&#xB294; &#xBD84;&#xBA85; &#xACFC;&#xD559;&#xC5D0; &#xC798; &#xB179;&#xC544;&#xB4E4; &#xC218; &#xC788;&#xB294; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC785;&#xB2C8;&#xB2E4;.
+&#xD558;&#xC9C0;&#xB9CC; &#xC548;&#xD0C0;&#xAE5D;&#xAC8C;&#xB3C4; &#xC774;&#xB294; &#xACFC;&#xD559;&#xC790;&#xB4E4;&#xC5D0;&#xAC90; &#xAC70;&#xC758; &#xC54C;&#xB824;&#xC838; &#xC788;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xC774; &#xAE00;&#xC774; &#xD55C; &#xAC78;&#xC74C; &#xB354; &#xB2E4;&#xAC00;&#xAC08; &#xC218; &#xC788;&#xAC8C; &#xB418;&#xB294; &#xACC4;&#xAE30;&#xAC00; &#xB418;&#xAE38; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB7FC;, &#xC774;&#xB9CC; &#xAC01;&#xC124;&#xD558;&#xACE0; &#xC2DC;&#xC791;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+<blockquote id="fn_1">
+<sup>1</sup>. <a href="https://www.physicsforums.com/threads/is-object-oriented-programming-unnecessary-for-scientific-applications.218094/" target="_blank">Physics Forum</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Welcome">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="fp_01.html" class="navigation navigation-next " aria-label="Next page: 1. What is FP">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"FP for Scientists","level":"1.2","depth":1,"next":{"title":"1. What is FP","level":"1.2.1","depth":2,"path":"FP/fp_01.md","ref":"FP/fp_01.md","articles":[]},"previous":{"title":"Welcome","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","livereload"],"pluginsConfig":{"fontsettings":{"theme":"white","family":"serif","size":2},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FP/fp_intro.md","mtime":"2018-04-27T16:13:08.800Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-01T13:31:30.845Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
