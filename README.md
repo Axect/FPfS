@@ -10,6 +10,6 @@
 
 ### Skills
 
-* Lang: Haskell, Rust, Julia, Elm, Python, Go
+* Language: Haskell, Rust, Nim, Julia, Elm, Python, Go
 * Framework: Django, Vue
 * Product: [Yonsei HEP-COSMO](http://nexus.yonsei.ac.kr)
